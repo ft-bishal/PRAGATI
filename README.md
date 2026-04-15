@@ -9,7 +9,7 @@
 PRAGATI is an advanced multi-agent intelligence system designed for the agricultural sector.  
 The platform leverages retrieval-augmented generation (RAG) and semantic search to deliver context-aware, data-driven insights grounded in verified agricultural knowledge bases.
 
-**Developed for the Capital One Launchpad Hackathon.**
+**Developed by Bishal Dalai for Bachelor Thesis Project, IIT Kharagpur.**
 
 **The Agentic AI system operates in two modes: Tooling and RAG.**
 
@@ -88,8 +88,8 @@ Our RAGAS evaluation (see results below) demonstrates the effectiveness of this 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/SRINJOY59/Capital_One_Launchpad.git
-cd Capital_One_Launchpad
+git clone https://github.com/ft-bishal/PRAGATI.git
+cd PRAGATI
 ```
 
 ### Environment Configuration
@@ -224,7 +224,7 @@ uvicorn app:app --reload --host 0.0.0.0 --port 8080
 ## Project Structure
 
 ```
-Capital_One_Launchpad/
+PRAGATI/
 ├── Agents/                       # AI Agent modules
 │   ├── Crop_Disease/             # Disease detection agent
 │   │   ├── agent.py
@@ -445,7 +445,7 @@ Refer to the scripts in the `Evaluation/` folder for usage instructions and data
 - Agricultural research institutions for datasets
 - Open source machine learning community
 - FastAPI and the modern Python ecosystem
-- Capital One Launchpad Program
+- Bachelor Thesis Project, IIT Kharagpur
 
 ---
 

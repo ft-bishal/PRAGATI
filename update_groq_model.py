@@ -1,6 +1,6 @@
 import os
 
-directory = "/Users/bishal/Downloads/Capital_One_Launchpad-main"
+directory = "/Users/bishal/Downloads/PRAGATI-Backend-main"
 count = 0
 for root, dirs, files in os.walk(directory):
     if "venv" in root or "__pycache__" in root or ".git" in root:

@@ -160,7 +160,7 @@ from datetime import datetime
 import sys
 import inspect
 
-# Correct path resolution for Capital_One_Launchpad project
+# Correct path resolution for PRAGATI project
 current_file = inspect.getfile(inspect.currentframe())
 agents_dir = os.path.dirname(current_file)
 project_root = os.path.dirname(os.path.dirname(agents_dir))
