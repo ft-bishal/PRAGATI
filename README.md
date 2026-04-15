@@ -9,6 +9,8 @@
 
 PRAGATI is a pioneering RAG-powered Multi-Agent Orchestrator System tailored for agricultural domain knowledge. Our vision is to empower the agricultural sector with:
 
+**Developed by Bishal Dalai for Bachelor Thesis Project, IIT Kharagpur.**
+
 - **Specialized AI Agents**: Deliver precise, timely, and context-aware recommendations for crop selection, irrigation, fertilizer use, pest detection etc.
 - **Query Complexity Assessment**: Optimizes retrieval and generation, ensuring the right expertise is applied to each query.
 - **Multi-Agent Orchestration**: Coordinates specialized agents for comprehensive, expert-backed answers.

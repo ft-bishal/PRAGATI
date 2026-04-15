@@ -240,19 +240,19 @@ export default function AgriculturalAIChatbot() {
           prev.map((session) =>
             session.id === currentSessionId
               ? {
-                  ...session,
-                  messages: session.messages.map((msg) =>
-                    msg.id === messageId
-                      ? {
-                          ...msg,
-                          translations: {
-                            ...msg.translations,
-                            [targetLanguage]: translationResult.translated_text,
-                          },
-                        }
-                      : msg
-                  ),
-                }
+                ...session,
+                messages: session.messages.map((msg) =>
+                  msg.id === messageId
+                    ? {
+                      ...msg,
+                      translations: {
+                        ...msg.translations,
+                        [targetLanguage]: translationResult.translated_text,
+                      },
+                    }
+                    : msg
+                ),
+              }
               : session
           )
         );
@@ -264,19 +264,19 @@ export default function AgriculturalAIChatbot() {
           prev.map((session) =>
             session.id === currentSessionId
               ? {
-                  ...session,
-                  messages: session.messages.map((msg) =>
-                    msg.id === messageId
-                      ? {
-                          ...msg,
-                          translations: {
-                            ...msg.translations,
-                            [targetLanguage]: `[Translation unavailable] ${msg.content}`,
-                          },
-                        }
-                      : msg
-                  ),
-                }
+                ...session,
+                messages: session.messages.map((msg) =>
+                  msg.id === messageId
+                    ? {
+                      ...msg,
+                      translations: {
+                        ...msg.translations,
+                        [targetLanguage]: `[Translation unavailable] ${msg.content}`,
+                      },
+                    }
+                    : msg
+                ),
+              }
               : session
           )
         );
@@ -330,14 +330,14 @@ export default function AgriculturalAIChatbot() {
         prev.map((session) =>
           session.id === sessionId
             ? {
-                ...session,
-                messages: [...session.messages, userMessage],
-                title:
-                  session.messages.length === 0
-                    ? content.slice(0, 40) + "..."
-                    : session.title,
-                updatedAt: new Date(),
-              }
+              ...session,
+              messages: [...session.messages, userMessage],
+              title:
+                session.messages.length === 0
+                  ? content.slice(0, 40) + "..."
+                  : session.title,
+              updatedAt: new Date(),
+            }
             : session
         )
       );
@@ -402,7 +402,7 @@ export default function AgriculturalAIChatbot() {
           // Use the response from the agent
           const responseContent = agentResponse.success
             ? agentResponse.response ||
-              "I received your weather query but couldn't generate a response."
+            "I received your weather query but couldn't generate a response."
             : `Weather forecast error: ${agentResponse.error || "Unknown error occurred"}`;
 
           assistantMessage = {
@@ -431,7 +431,7 @@ export default function AgriculturalAIChatbot() {
           // Use the response from the agent
           const responseContent = agentResponse.success
             ? agentResponse.result ||
-              "I received your crop yield query but couldn't generate a response."
+            "I received your crop yield query but couldn't generate a response."
             : `Crop yield prediction error: ${agentResponse.error || "Unknown error occurred"}`;
 
           assistantMessage = {
@@ -465,7 +465,7 @@ export default function AgriculturalAIChatbot() {
           // Use the response from the agent
           const responseContent = agentResponse.success
             ? agentResponse.response ||
-              "I received your credit policy query but couldn't generate a response."
+            "I received your credit policy query but couldn't generate a response."
             : `Credit policy analysis error: ${agentResponse.error || "Unknown error occurred"}`;
 
           assistantMessage = {
@@ -626,7 +626,7 @@ export default function AgriculturalAIChatbot() {
           // Use the response from the agent
           const responseContent = agentResponse.success
             ? agentResponse.response ||
-              "I received your market price query but couldn't generate a response."
+            "I received your market price query but couldn't generate a response."
             : `Market price analysis error: ${agentResponse.error || "Unknown error occurred"}`;
 
           assistantMessage = {
@@ -809,7 +809,7 @@ export default function AgriculturalAIChatbot() {
 
           const responseContent = agentResponse.success
             ? agentResponse.response ||
-              "I received your query but couldn't generate a response."
+            "I received your query but couldn't generate a response."
             : `Error: ${agentResponse.error || "Unknown error occurred"}`;
 
           assistantMessage = {
@@ -833,10 +833,10 @@ export default function AgriculturalAIChatbot() {
           prev.map((session) =>
             session.id === sessionId // ✅ use local sessionId, never stale
               ? {
-                  ...session,
-                  messages: [...session.messages, assistantMessage],
-                  updatedAt: new Date(),
-                }
+                ...session,
+                messages: [...session.messages, assistantMessage],
+                updatedAt: new Date(),
+              }
               : session
           )
         );
@@ -858,10 +858,10 @@ export default function AgriculturalAIChatbot() {
           prev.map((session) =>
             session.id === currentSessionId
               ? {
-                  ...session,
-                  messages: [...session.messages, errorMessage],
-                  updatedAt: new Date(),
-                }
+                ...session,
+                messages: [...session.messages, errorMessage],
+                updatedAt: new Date(),
+              }
               : session
           )
         );
@@ -940,7 +940,7 @@ export default function AgriculturalAIChatbot() {
                   <Turnstile
                     siteKey={
                       process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ||
-                      "0x4AAAAAABu9IhavKy4c6vpY"
+                      "1x00000000000000000000AA"
                     }
                     onSuccess={(token) => {
                       console.log("Turnstile verification successful");
@@ -1422,7 +1422,7 @@ export default function AgriculturalAIChatbot() {
                       <Turnstile
                         siteKey={
                           process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ||
-                          "0x4AAAAAABu9IhavKy4c6vpY"
+                          "1x00000000000000000000AA"
                         }
                         onSuccess={(token) => {
                           console.log("Turnstile verification successful");

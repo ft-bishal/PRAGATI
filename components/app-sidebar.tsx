@@ -343,6 +343,9 @@ export function AppSidebar({
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
+        <div className="mt-4 px-2 text-[10px] text-gray-400 text-center leading-tight">
+          Developed by Bishal Dalai for Bachelor Thesis Project, IIT Kharagpur
+        </div>
       </SidebarFooter>
 
       <SidebarRail />

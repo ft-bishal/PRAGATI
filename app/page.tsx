@@ -451,8 +451,8 @@ export default function Home() {
             <span className="font-semibold text-gray-700">PRAGATI</span>
           </div>
           <p>
-            © 2025 PRAGATI. Empowering Agriculture with AI Technology &
-            Insights.
+            © 2025 PRAGATI. Developed by Bishal Dalai for Bachelor Thesis
+            Project, IIT Kharagpur.
           </p>
         </footer>
       </div>
